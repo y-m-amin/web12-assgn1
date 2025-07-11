@@ -55,7 +55,7 @@ header {
 }
 
 .banner h1 {
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
   font-size: 4rem;
   width: 40%;
   text-wrap: wrap;
@@ -76,21 +76,12 @@ header {
   background-color: #005fa3;
 }
 
-/* .action {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 150px;
-  background-color: #f0f0f0;
-} */
-
 .action {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Centers content, use 'space-between' if you want full width */
+  justify-content: space-between;
   /* gap: 200px; Controls space between left and right */
   padding: 60px 340px;
-  background-color: #f0f0f0;
 }
 
 .action-left {
@@ -126,4 +117,55 @@ header {
   height: auto;
 
   border-radius: 15px;
+}
+
+.pro-wrapper {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.pro-user {
+  width: 70%;
+  height: 300px;
+  background-color: #5ac576;
+  border-radius: 15px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pro-user h1 {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.pro {
+  display: flex;
+  gap: 150px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item dt {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 3rem;
+}
+
+.item dd {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
 }
